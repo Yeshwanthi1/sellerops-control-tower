@@ -1,0 +1,218 @@
+[
+  {
+    "rule_id": "RULE-000001",
+    "category": "Electronics",
+    "seller_tier": "TIER_1",
+    "rate": 0.07,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Electronics (TIER_1)"
+  },
+  {
+    "rule_id": "RULE-000002",
+    "category": "Electronics",
+    "seller_tier": "TIER_2",
+    "rate": 0.08,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Electronics (TIER_2)"
+  },
+  {
+    "rule_id": "RULE-000003",
+    "category": "Electronics",
+    "seller_tier": "TIER_3",
+    "rate": 0.08,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Electronics (TIER_3)"
+  },
+  {
+    "rule_id": "RULE-000004",
+    "category": "Electronics",
+    "seller_tier": "ENTERPRISE",
+    "rate": 0.06,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Electronics (ENTERPRISE)"
+  },
+  {
+    "rule_id": "RULE-000005",
+    "category": "Apparel",
+    "seller_tier": "TIER_1",
+    "rate": 0.14,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Apparel (TIER_1)"
+  },
+  {
+    "rule_id": "RULE-000006",
+    "category": "Apparel",
+    "seller_tier": "TIER_2",
+    "rate": 0.15,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Apparel (TIER_2)"
+  },
+  {
+    "rule_id": "RULE-000007",
+    "category": "Apparel",
+    "seller_tier": "TIER_3",
+    "rate": 0.15,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Apparel (TIER_3)"
+  },
+  {
+    "rule_id": "RULE-000008",
+    "category": "Apparel",
+    "seller_tier": "ENTERPRISE",
+    "rate": 0.13,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Apparel (ENTERPRISE)"
+  },
+  {
+    "rule_id": "RULE-000009",
+    "category": "Home & Kitchen",
+    "seller_tier": "TIER_1",
+    "rate": 0.11,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Home & Kitchen (TIER_1)"
+  },
+  {
+    "rule_id": "RULE-000010",
+    "category": "Home & Kitchen",
+    "seller_tier": "TIER_2",
+    "rate": 0.12,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Home & Kitchen (TIER_2)"
+  },
+  {
+    "rule_id": "RULE-000011",
+    "category": "Home & Kitchen",
+    "seller_tier": "TIER_3",
+    "rate": 0.12,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Home & Kitchen (TIER_3)"
+  },
+  {
+    "rule_id": "RULE-000012",
+    "category": "Home & Kitchen",
+    "seller_tier": "ENTERPRISE",
+    "rate": 0.1,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Home & Kitchen (ENTERPRISE)"
+  },
+  {
+    "rule_id": "RULE-000013",
+    "category": "Beauty",
+    "seller_tier": "TIER_1",
+    "rate": 0.13,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Beauty (TIER_1)"
+  },
+  {
+    "rule_id": "RULE-000014",
+    "category": "Beauty",
+    "seller_tier": "TIER_2",
+    "rate": 0.14,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Beauty (TIER_2)"
+  },
+  {
+    "rule_id": "RULE-000015",
+    "category": "Beauty",
+    "seller_tier": "TIER_3",
+    "rate": 0.14,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Beauty (TIER_3)"
+  },
+  {
+    "rule_id": "RULE-000016",
+    "category": "Beauty",
+    "seller_tier": "ENTERPRISE",
+    "rate": 0.12,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Beauty (ENTERPRISE)"
+  },
+  {
+    "rule_id": "RULE-000017",
+    "category": "Books",
+    "seller_tier": "TIER_1",
+    "rate": 0.09,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Books (TIER_1)"
+  },
+  {
+    "rule_id": "RULE-000018",
+    "category": "Books",
+    "seller_tier": "TIER_2",
+    "rate": 0.1,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Books (TIER_2)"
+  },
+  {
+    "rule_id": "RULE-000019",
+    "category": "Books",
+    "seller_tier": "TIER_3",
+    "rate": 0.1,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Books (TIER_3)"
+  },
+  {
+    "rule_id": "RULE-000020",
+    "category": "Books",
+    "seller_tier": "ENTERPRISE",
+    "rate": 0.08,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Books (ENTERPRISE)"
+  },
+  {
+    "rule_id": "RULE-000021",
+    "category": "Sports",
+    "seller_tier": "TIER_1",
+    "rate": 0.1,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Sports (TIER_1)"
+  },
+  {
+    "rule_id": "RULE-000022",
+    "category": "Sports",
+    "seller_tier": "TIER_2",
+    "rate": 0.11,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Sports (TIER_2)"
+  },
+  {
+    "rule_id": "RULE-000023",
+    "category": "Sports",
+    "seller_tier": "TIER_3",
+    "rate": 0.11,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Sports (TIER_3)"
+  },
+  {
+    "rule_id": "RULE-000024",
+    "category": "Sports",
+    "seller_tier": "ENTERPRISE",
+    "rate": 0.09,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31",
+    "description": "2026 Standard Commission Rule for Sports (ENTERPRISE)"
+  }
+]

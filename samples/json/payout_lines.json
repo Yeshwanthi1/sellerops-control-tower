@@ -1,0 +1,882 @@
+[
+  {
+    "payout_line_id": "PAYLINE-2026-000001-01",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000005-01",
+    "line_type": "GROSS_SALES",
+    "amount": 162.2,
+    "description": "Gross item revenue for LINE-2026-000005-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-02",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000005-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -17.84,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-03",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000005-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -14.6,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-04",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000011-01",
+    "line_type": "GROSS_SALES",
+    "amount": 166.89,
+    "description": "Gross item revenue for LINE-2026-000011-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-05",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000011-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -20.03,
+    "description": "Platform commission fee (12.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-06",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000011-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -15.02,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-07",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000026-01",
+    "line_type": "GROSS_SALES",
+    "amount": 500.67,
+    "description": "Gross item revenue for LINE-2026-000026-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-08",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000026-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -60.08,
+    "description": "Platform commission fee (12.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-09",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000026-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -45.06,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-10",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000032-01",
+    "line_type": "GROSS_SALES",
+    "amount": 15.53,
+    "description": "Gross item revenue for LINE-2026-000032-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-11",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000032-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -1.55,
+    "description": "Platform commission fee (10.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-12",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000032-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -1.4,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-13",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000065-02",
+    "line_type": "GROSS_SALES",
+    "amount": 333.78,
+    "description": "Gross item revenue for LINE-2026-000065-02"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-14",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000065-02",
+    "line_type": "COMMISSION_FEE",
+    "amount": -40.05,
+    "description": "Platform commission fee (12.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-15",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000065-02",
+    "line_type": "RESERVE_HOLD",
+    "amount": -30.04,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-16",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000113-01",
+    "line_type": "GROSS_SALES",
+    "amount": 235.78,
+    "description": "Gross item revenue for LINE-2026-000113-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-17",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000113-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -25.94,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-18",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000113-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -21.22,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-19",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000180-01",
+    "line_type": "GROSS_SALES",
+    "amount": 194.9,
+    "description": "Gross item revenue for LINE-2026-000180-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-20",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000180-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -15.59,
+    "description": "Platform commission fee (8.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-21",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000180-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -17.54,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-22",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000005-01",
+    "line_type": "DISPUTE_DEDUCTION",
+    "amount": -118.09,
+    "description": "Upheld dispute chargeback for LINE-2026-000005-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000001-23",
+    "payout_id": "PAYOUT-2026-000001",
+    "order_line_id": "LINE-2026-000032-01",
+    "line_type": "DISPUTE_DEDUCTION",
+    "amount": -15.53,
+    "description": "Upheld dispute chargeback for LINE-2026-000032-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-01",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000229-02",
+    "line_type": "GROSS_SALES",
+    "amount": 166.89,
+    "description": "Gross item revenue for LINE-2026-000229-02"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-02",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000229-02",
+    "line_type": "COMMISSION_FEE",
+    "amount": -20.03,
+    "description": "Platform commission fee (12.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-03",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000229-02",
+    "line_type": "RESERVE_HOLD",
+    "amount": -15.02,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-04",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000240-01",
+    "line_type": "GROSS_SALES",
+    "amount": 117.89,
+    "description": "Gross item revenue for LINE-2026-000240-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-05",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000240-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -12.97,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-06",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000240-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -10.61,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-07",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000250-01",
+    "line_type": "GROSS_SALES",
+    "amount": 162.2,
+    "description": "Gross item revenue for LINE-2026-000250-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-08",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000250-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -17.84,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-09",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000250-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -14.6,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-10",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000251-01",
+    "line_type": "GROSS_SALES",
+    "amount": 162.2,
+    "description": "Gross item revenue for LINE-2026-000251-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-11",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000251-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -17.84,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-12",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000251-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -14.6,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-13",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000265-03",
+    "line_type": "GROSS_SALES",
+    "amount": 194.9,
+    "description": "Gross item revenue for LINE-2026-000265-03"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-14",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000265-03",
+    "line_type": "COMMISSION_FEE",
+    "amount": -15.59,
+    "description": "Platform commission fee (8.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-15",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000265-03",
+    "line_type": "RESERVE_HOLD",
+    "amount": -17.54,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-16",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000269-03",
+    "line_type": "GROSS_SALES",
+    "amount": 162.2,
+    "description": "Gross item revenue for LINE-2026-000269-03"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-17",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000269-03",
+    "line_type": "COMMISSION_FEE",
+    "amount": -17.84,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-18",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000269-03",
+    "line_type": "RESERVE_HOLD",
+    "amount": -14.6,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-19",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000381-01",
+    "line_type": "GROSS_SALES",
+    "amount": 162.2,
+    "description": "Gross item revenue for LINE-2026-000381-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-20",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000381-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -17.84,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000002-21",
+    "payout_id": "PAYOUT-2026-000002",
+    "order_line_id": "LINE-2026-000381-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -14.6,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-01",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000405-02",
+    "line_type": "GROSS_SALES",
+    "amount": 162.2,
+    "description": "Gross item revenue for LINE-2026-000405-02"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-02",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000405-02",
+    "line_type": "COMMISSION_FEE",
+    "amount": -17.84,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-03",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000405-02",
+    "line_type": "RESERVE_HOLD",
+    "amount": -14.6,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-04",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000428-04",
+    "line_type": "GROSS_SALES",
+    "amount": 15.53,
+    "description": "Gross item revenue for LINE-2026-000428-04"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-05",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000428-04",
+    "line_type": "COMMISSION_FEE",
+    "amount": -1.55,
+    "description": "Platform commission fee (10.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-06",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000428-04",
+    "line_type": "RESERVE_HOLD",
+    "amount": -1.4,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-07",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000451-01",
+    "line_type": "GROSS_SALES",
+    "amount": 162.2,
+    "description": "Gross item revenue for LINE-2026-000451-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-08",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000451-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -17.84,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-09",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000451-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -14.6,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-10",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000510-01",
+    "line_type": "GROSS_SALES",
+    "amount": 194.9,
+    "description": "Gross item revenue for LINE-2026-000510-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-11",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000510-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -15.59,
+    "description": "Platform commission fee (8.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-12",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000510-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -17.54,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-13",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000521-01",
+    "line_type": "GROSS_SALES",
+    "amount": 141.21,
+    "description": "Gross item revenue for LINE-2026-000521-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-14",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000521-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -21.18,
+    "description": "Platform commission fee (15.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-15",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000521-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -12.71,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-16",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000533-01",
+    "line_type": "GROSS_SALES",
+    "amount": 162.2,
+    "description": "Gross item revenue for LINE-2026-000533-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-17",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000533-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -17.84,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-18",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000533-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -14.6,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-19",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000537-04",
+    "line_type": "GROSS_SALES",
+    "amount": 166.89,
+    "description": "Gross item revenue for LINE-2026-000537-04"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-20",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000537-04",
+    "line_type": "COMMISSION_FEE",
+    "amount": -20.03,
+    "description": "Platform commission fee (12.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000003-21",
+    "payout_id": "PAYOUT-2026-000003",
+    "order_line_id": "LINE-2026-000537-04",
+    "line_type": "RESERVE_HOLD",
+    "amount": -15.02,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-01",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000565-03",
+    "line_type": "GROSS_SALES",
+    "amount": 117.89,
+    "description": "Gross item revenue for LINE-2026-000565-03"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-02",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000565-03",
+    "line_type": "COMMISSION_FEE",
+    "amount": -12.97,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-03",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000565-03",
+    "line_type": "RESERVE_HOLD",
+    "amount": -10.61,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-04",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000568-01",
+    "line_type": "GROSS_SALES",
+    "amount": 117.89,
+    "description": "Gross item revenue for LINE-2026-000568-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-05",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000568-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -12.97,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-06",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000568-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -10.61,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-07",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000581-01",
+    "line_type": "GROSS_SALES",
+    "amount": 324.4,
+    "description": "Gross item revenue for LINE-2026-000581-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-08",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000581-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -35.68,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-09",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000581-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -29.2,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-10",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000607-01",
+    "line_type": "GROSS_SALES",
+    "amount": 117.89,
+    "description": "Gross item revenue for LINE-2026-000607-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-11",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000607-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -12.97,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-12",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000607-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -10.61,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-13",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000654-01",
+    "line_type": "GROSS_SALES",
+    "amount": 194.9,
+    "description": "Gross item revenue for LINE-2026-000654-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-14",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000654-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -15.59,
+    "description": "Platform commission fee (8.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-15",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000654-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -17.54,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-16",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000660-03",
+    "line_type": "GROSS_SALES",
+    "amount": 166.89,
+    "description": "Gross item revenue for LINE-2026-000660-03"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-17",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000660-03",
+    "line_type": "COMMISSION_FEE",
+    "amount": -20.03,
+    "description": "Platform commission fee (12.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-18",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000660-03",
+    "line_type": "RESERVE_HOLD",
+    "amount": -15.02,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-19",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000699-01",
+    "line_type": "GROSS_SALES",
+    "amount": 194.9,
+    "description": "Gross item revenue for LINE-2026-000699-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-20",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000699-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -15.59,
+    "description": "Platform commission fee (8.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000004-21",
+    "payout_id": "PAYOUT-2026-000004",
+    "order_line_id": "LINE-2026-000699-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -17.54,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-01",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000703-01",
+    "line_type": "GROSS_SALES",
+    "amount": 194.9,
+    "description": "Gross item revenue for LINE-2026-000703-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-02",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000703-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -15.59,
+    "description": "Platform commission fee (8.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-03",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000703-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -17.54,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-04",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000704-03",
+    "line_type": "GROSS_SALES",
+    "amount": 31.06,
+    "description": "Gross item revenue for LINE-2026-000704-03"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-05",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000704-03",
+    "line_type": "COMMISSION_FEE",
+    "amount": -3.11,
+    "description": "Platform commission fee (10.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-06",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000704-03",
+    "line_type": "RESERVE_HOLD",
+    "amount": -2.8,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-07",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000723-01",
+    "line_type": "GROSS_SALES",
+    "amount": 162.2,
+    "description": "Gross item revenue for LINE-2026-000723-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-08",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000723-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -17.84,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-09",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000723-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -14.6,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-10",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000728-01",
+    "line_type": "GROSS_SALES",
+    "amount": 324.4,
+    "description": "Gross item revenue for LINE-2026-000728-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-11",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000728-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -35.68,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-12",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000728-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -29.2,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-13",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000745-01",
+    "line_type": "GROSS_SALES",
+    "amount": 235.78,
+    "description": "Gross item revenue for LINE-2026-000745-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-14",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000745-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -25.94,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-15",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000745-01",
+    "line_type": "RESERVE_HOLD",
+    "amount": -21.22,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-16",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000783-02",
+    "line_type": "GROSS_SALES",
+    "amount": 79.64,
+    "description": "Gross item revenue for LINE-2026-000783-02"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-17",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000783-02",
+    "line_type": "COMMISSION_FEE",
+    "amount": -8.76,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-18",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000783-02",
+    "line_type": "RESERVE_HOLD",
+    "amount": -7.17,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-19",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000815-02",
+    "line_type": "GROSS_SALES",
+    "amount": 162.2,
+    "description": "Gross item revenue for LINE-2026-000815-02"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-20",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000815-02",
+    "line_type": "COMMISSION_FEE",
+    "amount": -17.84,
+    "description": "Platform commission fee (11.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-2026-000005-21",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000815-02",
+    "line_type": "RESERVE_HOLD",
+    "amount": -14.6,
+    "description": "Reserve hold (9.0%)"
+  },
+  {
+    "payout_line_id": "PAYLINE-DUP-0001",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000703-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -15.59,
+    "description": "Duplicate commission fee charged for LINE-2026-000703-01"
+  },
+  {
+    "payout_line_id": "PAYLINE-DUP-0002",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000704-03",
+    "line_type": "COMMISSION_FEE",
+    "amount": -3.11,
+    "description": "Duplicate commission fee charged for LINE-2026-000704-03"
+  },
+  {
+    "payout_line_id": "PAYLINE-DUP-0003",
+    "payout_id": "PAYOUT-2026-000005",
+    "order_line_id": "LINE-2026-000723-01",
+    "line_type": "COMMISSION_FEE",
+    "amount": -17.84,
+    "description": "Duplicate commission fee charged for LINE-2026-000723-01"
+  }
+]

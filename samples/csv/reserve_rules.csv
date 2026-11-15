@@ -1,0 +1,5 @@
+reserve_rule_id,seller_tier,default_reserve_rate,hold_period_days,effective_from,effective_to
+RES-000001,ENTERPRISE,0.04,7,2026-01-01,2026-12-31
+RES-000002,TIER_1,0.06,7,2026-01-01,2026-12-31
+RES-000003,TIER_2,0.09,14,2026-01-01,2026-12-31
+RES-000004,TIER_3,0.12,21,2026-01-01,2026-12-31

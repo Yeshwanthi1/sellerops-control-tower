@@ -1,0 +1,34 @@
+[
+  {
+    "reserve_rule_id": "RES-000001",
+    "seller_tier": "ENTERPRISE",
+    "default_reserve_rate": 0.04,
+    "hold_period_days": 7,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31"
+  },
+  {
+    "reserve_rule_id": "RES-000002",
+    "seller_tier": "TIER_1",
+    "default_reserve_rate": 0.06,
+    "hold_period_days": 7,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31"
+  },
+  {
+    "reserve_rule_id": "RES-000003",
+    "seller_tier": "TIER_2",
+    "default_reserve_rate": 0.09,
+    "hold_period_days": 14,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31"
+  },
+  {
+    "reserve_rule_id": "RES-000004",
+    "seller_tier": "TIER_3",
+    "default_reserve_rate": 0.12,
+    "hold_period_days": 21,
+    "effective_from": "2026-01-01",
+    "effective_to": "2026-12-31"
+  }
+]

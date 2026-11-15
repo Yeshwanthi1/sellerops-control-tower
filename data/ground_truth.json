@@ -1,0 +1,137 @@
+[
+  {
+    "anomaly_id": "ANOM-000001",
+    "issue_type": "PAYOUT_BEFORE_HOLD_RELEASE",
+    "target_entity_type": "PAYOUT",
+    "target_entity_id": "PAYOUT-2026-000001",
+    "seller_id": "SELL-000023",
+    "expected_financial_impact": 1150.17,
+    "description": "Payout PAYOUT-2026-000001 was released on 2026-03-01 10:00:00 prior to hold release date 2026-04-15"
+  },
+  {
+    "anomaly_id": "ANOM-000002",
+    "issue_type": "PAYOUT_BEFORE_HOLD_RELEASE",
+    "target_entity_type": "PAYOUT",
+    "target_entity_id": "PAYOUT-2026-000002",
+    "seller_id": "SELL-000023",
+    "expected_financial_impact": 906.96,
+    "description": "Payout PAYOUT-2026-000002 was released on 2026-03-01 10:00:00 prior to hold release date 2026-04-15"
+  },
+  {
+    "anomaly_id": "ANOM-000003",
+    "issue_type": "PAYOUT_BEFORE_HOLD_RELEASE",
+    "target_entity_type": "PAYOUT",
+    "target_entity_id": "PAYOUT-2026-000003",
+    "seller_id": "SELL-000023",
+    "expected_financial_impact": 802.79,
+    "description": "Payout PAYOUT-2026-000003 was released on 2026-03-01 10:00:00 prior to hold release date 2026-04-15"
+  },
+  {
+    "anomaly_id": "ANOM-000004",
+    "issue_type": "COMMISSION_APPLIED_TWICE",
+    "target_entity_type": "ORDER_LINE",
+    "target_entity_id": "LINE-2026-000703-01",
+    "seller_id": "SELL-000023",
+    "expected_financial_impact": 15.59,
+    "description": "Order line LINE-2026-000703-01 had commission applied twice (duplicate deduction of $15.59)"
+  },
+  {
+    "anomaly_id": "ANOM-000005",
+    "issue_type": "COMMISSION_APPLIED_TWICE",
+    "target_entity_type": "ORDER_LINE",
+    "target_entity_id": "LINE-2026-000704-03",
+    "seller_id": "SELL-000023",
+    "expected_financial_impact": 3.11,
+    "description": "Order line LINE-2026-000704-03 had commission applied twice (duplicate deduction of $3.11)"
+  },
+  {
+    "anomaly_id": "ANOM-000006",
+    "issue_type": "COMMISSION_APPLIED_TWICE",
+    "target_entity_type": "ORDER_LINE",
+    "target_entity_id": "LINE-2026-000723-01",
+    "seller_id": "SELL-000023",
+    "expected_financial_impact": 17.84,
+    "description": "Order line LINE-2026-000723-01 had commission applied twice (duplicate deduction of $17.84)"
+  },
+  {
+    "anomaly_id": "ANOM-000007",
+    "issue_type": "SUSPENDED_SELLER_LISTING",
+    "target_entity_type": "PRODUCT_LISTING",
+    "target_entity_id": "LIST-SELL-000005-000001",
+    "seller_id": "SELL-000005",
+    "expected_financial_impact": 596.0,
+    "description": "Suspended seller SELL-000005 (Falcon Tech 5) maintains active listing LIST-SELL-000005-000001"
+  },
+  {
+    "anomaly_id": "ANOM-000008",
+    "issue_type": "SUSPENDED_SELLER_LISTING",
+    "target_entity_type": "PRODUCT_LISTING",
+    "target_entity_id": "LIST-SELL-000010-000001",
+    "seller_id": "SELL-000010",
+    "expected_financial_impact": 1153.9,
+    "description": "Suspended seller SELL-000010 (Zenith Direct 10) maintains active listing LIST-SELL-000010-000001"
+  },
+  {
+    "anomaly_id": "ANOM-000009",
+    "issue_type": "SUSPENDED_SELLER_LISTING",
+    "target_entity_type": "PRODUCT_LISTING",
+    "target_entity_id": "LIST-SELL-000015-000001",
+    "seller_id": "SELL-000015",
+    "expected_financial_impact": 745.5,
+    "description": "Suspended seller SELL-000015 (Falcon Brands 15) maintains active listing LIST-SELL-000015-000001"
+  },
+  {
+    "anomaly_id": "ANOM-000010",
+    "issue_type": "DISPUTE_NOT_DEDUCTED",
+    "target_entity_type": "DISPUTE",
+    "target_entity_id": "DSP-2026-000001",
+    "seller_id": "SELL-000045",
+    "expected_financial_impact": 25.6,
+    "description": "Upheld dispute DSP-2026-000001 ($25.60) was not deducted from payout PAYOUT-2026-000007"
+  },
+  {
+    "anomaly_id": "ANOM-000011",
+    "issue_type": "DISPUTE_NOT_DEDUCTED",
+    "target_entity_type": "DISPUTE",
+    "target_entity_id": "DSP-2026-000002",
+    "seller_id": "SELL-000039",
+    "expected_financial_impact": 55.4,
+    "description": "Upheld dispute DSP-2026-000002 ($55.40) was not deducted from payout PAYOUT-2026-000012"
+  },
+  {
+    "anomaly_id": "ANOM-000012",
+    "issue_type": "DISPUTE_NOT_DEDUCTED",
+    "target_entity_type": "DISPUTE",
+    "target_entity_id": "DSP-2026-000003",
+    "seller_id": "SELL-000028",
+    "expected_financial_impact": 16.31,
+    "description": "Upheld dispute DSP-2026-000003 ($16.31) was not deducted from payout PAYOUT-2026-000020"
+  },
+  {
+    "anomaly_id": "ANOM-000013",
+    "issue_type": "PAYOUT_TOTAL_MISMATCH",
+    "target_entity_type": "PAYOUT",
+    "target_entity_id": "PAYOUT-2026-000026",
+    "seller_id": "SELL-000011",
+    "expected_financial_impact": 125.0,
+    "description": "Payout PAYOUT-2026-000026 header net amount ($922.37) does not match sum of lines (variance: $125.00)"
+  },
+  {
+    "anomaly_id": "ANOM-000014",
+    "issue_type": "PAYOUT_TOTAL_MISMATCH",
+    "target_entity_type": "PAYOUT",
+    "target_entity_id": "PAYOUT-2026-000027",
+    "seller_id": "SELL-000011",
+    "expected_financial_impact": 125.0,
+    "description": "Payout PAYOUT-2026-000027 header net amount ($920.22) does not match sum of lines (variance: $125.00)"
+  },
+  {
+    "anomaly_id": "ANOM-000015",
+    "issue_type": "PAYOUT_TOTAL_MISMATCH",
+    "target_entity_type": "PAYOUT",
+    "target_entity_id": "PAYOUT-2026-000028",
+    "seller_id": "SELL-000011",
+    "expected_financial_impact": 125.0,
+    "description": "Payout PAYOUT-2026-000028 header net amount ($872.71) does not match sum of lines (variance: $125.00)"
+  }
+]

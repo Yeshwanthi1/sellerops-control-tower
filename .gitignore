@@ -1,0 +1,43 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Local databases (preserve locally, do not track in git)
+*.db
+*.db-journal
+*.db-wal
+*.sqlite
+*.sqlite3
+data/*.db
+
+# Large generated exports (exceeds regular Git upload limits)
+exports/
+exports/full_scale/
+exports/csv/
+exports/json/
+exports/sql/
+*.sql
+
+# Allow tracked lightweight samples
+!samples/
+!samples/**
+
+# Logs and scratch
+*.log
+scratch/
+.pytest_cache/
+
+# Operating system and editor artifacts
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/

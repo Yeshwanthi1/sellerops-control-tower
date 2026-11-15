@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SellerOps Control Tower</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <!-- Top Header with Role Selector -->
+  <header class="top-header">
+    <div class="brand">
+      <div class="brand-icon">ST</div>
+      <div>
+        <span class="brand-title">SellerOps Control Tower</span>
+        <span class="brand-tag">v1.0 Hackathon Edition</span>
+      </div>
+    </div>
+
+    <!-- Demo Role Selector as requested by organizers -->
+    <div class="role-selector-bar">
+      <span class="role-label">Active Role:</span>
+      <select id="roleSelector" class="role-select" onchange="switchRole(this.value)">
+        <option value="OPS_MANAGER" selected>Operations Manager (All Permissions)</option>
+        <option value="WAREHOUSE_OPERATOR">Warehouse Fulfillment Operator</option>
+        <option value="ANALYST">Business / Seller Analyst</option>
+        <option value="CUSTOMER">Customer (Order Tracking & Reviews)</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="nav-tabs">
+    <button class="tab-btn active" onclick="switchTab('overview')">
+      Overview Control Tower
+    </button>
+    <button class="tab-btn" onclick="switchTab('customer')">
+      Customer Tracking & Reviews
+    </button>
+    <button class="tab-btn" onclick="switchTab('warehouse')">
+      Warehouse Work Queue
+    </button>
+    <button class="tab-btn" onclick="switchTab('analyst')">
+      Analyst Seller Scorecards
+    </button>
+    <button class="tab-btn" onclick="switchTab('financials')">
+      Ops Financials & Payouts
+    </button>
+    <button class="tab-btn" onclick="switchTab('exceptions')">
+      Exception Queue <span id="badgeExceptions" class="badge-counter">0</span>
+    </button>
+    <button class="tab-btn" onclick="switchTab('evaluation')">
+      Evaluation & Ground Truth
+    </button>
+    <button class="tab-btn" onclick="switchTab('events')">
+      Audit Trail & Traceability
+    </button>
+    <button class="tab-btn" onclick="switchTab('exports')">
+      Export Center
+    </button>
+  </nav>
+
+  <!-- Main Content Container -->
+  <main class="main-content">
+
+    <!-- Role Explanation Banner -->
+    <div id="roleBanner" class="role-banner">
+      <div>
+        <div id="roleBannerTitle" class="role-banner-title">Operations Manager Console</div>
+        <div id="roleBannerDesc" class="role-banner-desc">Full visibility over financial controls, payout reconciliations, risk reserves, and exception queues.</div>
+      </div>
+      <div>
+        <span id="dataSeedTag" class="badge badge-blue">Seed: 20261022</span>
+      </div>
+    </div>
+
+    <!-- 1. OVERVIEW CONTROL TOWER TAB -->
+    <div id="tab-overview" class="tab-pane active">
+      <div class="kpi-grid">
+        <div class="kpi-card">
+          <div class="kpi-title">Gross Merchandise Value (GMV)</div>
+          <div id="kpiGMV" class="kpi-value">$0.00</div>
+          <div id="kpiOrders" class="kpi-subtitle">0 Total Orders</div>
+        </div>
+        <div class="kpi-card success">
+          <div class="kpi-title">On-Time Shipment Rate</div>
+          <div id="kpiOnTimeShip" class="kpi-value">0%</div>
+          <div id="kpiLateShip" class="kpi-subtitle">0 Late Shipments</div>
+        </div>
+        <div class="kpi-card success">
+          <div class="kpi-title">On-Time Delivery Rate</div>
+          <div id="kpiOnTimeDeliv" class="kpi-value">0%</div>
+          <div id="kpiLateDeliv" class="kpi-subtitle">0 Late Deliveries</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-title">Platform Commissions</div>
+          <div id="kpiCommissions" class="kpi-value">$0.00</div>
+          <div class="kpi-subtitle">Category Rate Schedule Yield</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-title">Risk Reserves Held</div>
+          <div id="kpiReserves" class="kpi-value">$0.00</div>
+          <div class="kpi-subtitle">Tier-Based Rolling Escrow</div>
+        </div>
+        <div class="kpi-card alert">
+          <div class="kpi-title">Disputes & Chargebacks</div>
+          <div id="kpiDisputes" class="kpi-value">0</div>
+          <div id="kpiDisputeAmt" class="kpi-subtitle">$0.00 Total Disputed</div>
+        </div>
+        <div class="kpi-card alert">
+          <div class="kpi-title">Detected Exceptions</div>
+          <div id="kpiExceptions" class="kpi-value">0</div>
+          <div id="kpiCriticalExceptions" class="kpi-subtitle">0 Critical Severity</div>
+        </div>
+      </div>
+
+      <!-- Quick Action / Status Split -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+        <div class="section-card">
+          <div class="section-header">
+            <div class="section-title">Seller Status Breakdown</div>
+          </div>
+          <div style="display: flex; gap: 1rem; align-items: center; padding: 1rem 0;">
+            <div style="flex: 1; text-align: center; background: var(--bg-card); padding: 1rem; border-radius: var(--radius-md);">
+              <div id="cntActiveSellers" style="font-size: 1.8rem; font-weight: 800; color: var(--accent-green);">0</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Active Sellers</div>
+            </div>
+            <div style="flex: 1; text-align: center; background: var(--bg-card); padding: 1rem; border-radius: var(--radius-md);">
+              <div id="cntSuspendedSellers" style="font-size: 1.8rem; font-weight: 800; color: var(--accent-red);">0</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Suspended Sellers</div>
+            </div>
+            <div style="flex: 1; text-align: center; background: var(--bg-card); padding: 1rem; border-radius: var(--radius-md);">
+              <div id="cntTotalSellers" style="font-size: 1.8rem; font-weight: 800; color: var(--accent-blue);">0</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Total Onboarded</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-header">
+            <div class="section-title">Net Payout Settlements</div>
+          </div>
+          <div style="display: flex; gap: 1rem; align-items: center; padding: 1rem 0;">
+            <div style="flex: 1; text-align: center; background: var(--bg-card); padding: 1rem; border-radius: var(--radius-md);">
+              <div id="cntPayouts" style="font-size: 1.8rem; font-weight: 800; color: var(--accent-purple);">0</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Settled Payouts</div>
+            </div>
+            <div style="flex: 1.5; text-align: center; background: var(--bg-card); padding: 1rem; border-radius: var(--radius-md);">
+              <div id="cntNetPaid" style="font-size: 1.8rem; font-weight: 800; color: var(--text-main);">$0.00</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Total Net Disbursed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. CUSTOMER TRACKING & REVIEWS TAB -->
+    <div id="tab-customer" class="tab-pane">
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-title">Track Customer Order</div>
+          <div class="section-actions">
+            <input type="text" id="custOrderSearchInput" class="input-search" placeholder="Enter Order ID (e.g. ORD-2026-000001)...">
+            <button class="btn btn-primary" onclick="searchCustomerOrder()">Track Order</button>
+          </div>
+        </div>
+
+        <!-- Order Result Container -->
+        <div id="custOrderDetails" style="margin-top: 1rem; display: none;">
+          <div style="background: var(--bg-card); padding: 1.25rem; border-radius: var(--radius-md); margin-bottom: 1rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <h3 id="custDetailOrderId" style="font-size: 1.25rem;">ORD-2026-000001</h3>
+                <span id="custDetailOrderDate" style="color: var(--text-muted); font-size: 0.85rem;">Date: 2026-03-01</span>
+              </div>
+              <div>
+                <span id="custDetailStatusBadge" class="badge badge-green">DELIVERED</span>
+              </div>
+            </div>
+            <div style="margin-top: 0.75rem; font-size: 0.85rem; color: var(--text-muted);">
+              <strong>Shipping Address:</strong> <span id="custDetailAddress">-</span>
+            </div>
+          </div>
+
+          <!-- Multi-seller Order Lines -->
+          <h4 style="margin-bottom: 0.75rem;">Order Line Items & Seller Packages</h4>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Line ID</th>
+                  <th>Product Listing</th>
+                  <th>Seller</th>
+                  <th>Qty</th>
+                  <th>Unit Price</th>
+                  <th>Subtotal</th>
+                  <th>Fulfillment Status</th>
+                  <th>Carrier & Tracking</th>
+                </tr>
+              </thead>
+              <tbody id="custOrderLinesTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Customer Reviews -->
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-title">Verified Customer Reviews</div>
+        </div>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Review ID</th>
+                <th>Order ID</th>
+                <th>Seller</th>
+                <th>Product</th>
+                <th>Rating</th>
+                <th>Title & Feedback</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody id="customerReviewsTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. WAREHOUSE WORK QUEUE TAB -->
+    <div id="tab-warehouse" class="tab-pane">
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-title">Fulfillment Operations Queue</div>
+          <div class="section-actions">
+            <select id="warehouseStatusFilter" class="filter-select" onchange="loadFulfillments()">
+              <option value="">All Statuses</option>
+              <option value="ALLOCATED">Allocated (Awaiting Pick)</option>
+              <option value="PICKED">Picked</option>
+              <option value="PACKED">Packed</option>
+              <option value="SHIPPED">Shipped (In Transit)</option>
+              <option value="DELIVERED">Delivered</option>
+              <option value="RETURNED">Returned</option>
+            </select>
+            <select id="warehouseCarrierFilter" class="filter-select" onchange="loadFulfillments()">
+              <option value="">All Carriers</option>
+              <option value="FedEx">FedEx</option>
+              <option value="UPS">UPS</option>
+              <option value="DHL">DHL</option>
+              <option value="USPS">USPS</option>
+            </select>
+            <label style="font-size: 0.85rem; display: flex; align-items: center; gap: 0.35rem; cursor: pointer;">
+              <input type="checkbox" id="warehouseLateOnly" onchange="loadFulfillments()"> Late SLA Only
+            </label>
+            <button class="btn btn-primary" onclick="loadFulfillments()">Refresh</button>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Fulfillment ID</th>
+                <th>Order Line</th>
+                <th>Seller</th>
+                <th>Product</th>
+                <th>Carrier</th>
+                <th>Tracking</th>
+                <th>Status</th>
+                <th>SLA Ship Deadline</th>
+                <th>SLA Delivery Deadline</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="warehouseFulfillmentsTable"></tbody>
+          </table>
+        </div>
+        <div id="warehousePagination"></div>
+      </div>
+    </div>
+
+    <!-- 4. ANALYST SELLER SCORECARDS TAB -->
+    <div id="tab-analyst" class="tab-pane">
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-title">Seller SLA & Performance Directory</div>
+          <div class="section-actions">
+            <input type="text" id="sellerSearchInput" class="input-search" placeholder="Search seller name or ID..." onkeyup="filterSellers()">
+            <select id="sellerStatusFilter" class="filter-select" onchange="loadSellers()">
+              <option value="">All Statuses</option>
+              <option value="ACTIVE">Active</option>
+              <option value="PROBATION">Probation</option>
+              <option value="SUSPENDED">Suspended</option>
+            </select>
+            <select id="sellerTierFilter" class="filter-select" onchange="loadSellers()">
+              <option value="">All Tiers</option>
+              <option value="TIER_1">Tier 1</option>
+              <option value="TIER_2">Tier 2</option>
+              <option value="TIER_3">Tier 3</option>
+              <option value="ENTERPRISE">Enterprise</option>
+            </select>
+            <button class="btn btn-primary" onclick="loadSellers()">Apply</button>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Seller ID</th>
+                <th>Name</th>
+                <th>Tier</th>
+                <th>Status</th>
+                <th>Reserve Rate</th>
+                <th>Hold Period</th>
+                <th>On-Time Ship %</th>
+                <th>Listings</th>
+                <th>Fulfillments</th>
+                <th>Disputes</th>
+                <th>Total Paid</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="sellersTable"></tbody>
+          </table>
+        </div>
+        <div id="sellerPagination"></div>
+      </div>
+    </div>
+
+    <!-- 5. OPS FINANCIALS & PAYOUTS TAB -->
+    <div id="tab-financials" class="tab-pane">
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-title">Seller Payout Reconciliation & Settlements</div>
+          <div class="section-actions">
+            <select id="payoutStatusFilter" class="filter-select" onchange="loadPayouts()">
+              <option value="">All Statuses</option>
+              <option value="PAID">Paid</option>
+              <option value="APPROVED">Approved</option>
+              <option value="PENDING_APPROVAL">Pending Approval</option>
+              <option value="HELD">Held</option>
+            </select>
+            <button class="btn btn-primary" onclick="loadPayouts()">Refresh Payouts</button>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Payout ID</th>
+                <th>Seller</th>
+                <th>Period</th>
+                <th>Gross Sales</th>
+                <th>Commission</th>
+                <th>Reserve Held</th>
+                <th>Dispute Deductions</th>
+                <th>Net Payout</th>
+                <th>Status</th>
+                <th>Hold Release Date</th>
+                <th>Released At</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="payoutsTable"></tbody>
+          </table>
+        </div>
+        <div id="payoutPagination"></div>
+      </div>
+    </div>
+
+    <!-- 6. EXCEPTION QUEUE TAB -->
+    <div id="tab-exceptions" class="tab-pane">
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-title">Operational Exception & Anomaly Queue</div>
+          <div class="section-actions">
+            <span class="badge badge-amber" style="font-size: 0.85rem; padding: 0.35rem 0.75rem;">Audited via Independent Business Rules Engine</span>
+            <button class="btn btn-primary" onclick="loadExceptions()">Re-Audit Ledger</button>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Exception ID</th>
+                <th>Severity</th>
+                <th>Issue Type</th>
+                <th>Target Record</th>
+                <th>Seller ID</th>
+                <th>Financial Impact</th>
+                <th>Rule Violated</th>
+                <th>Evidence</th>
+                <th>Recommended Action</th>
+              </tr>
+            </thead>
+            <tbody id="exceptionsTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. EVALUATION & GROUND TRUTH TAB -->
+    <div id="tab-evaluation" class="tab-pane">
+      <div class="section-card">
+        <div class="section-header">
+          <div>
+            <div class="section-title">Autonomous Auditor Evaluation against Ground Truth</div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.25rem;">
+              Strict isolation: ground_truth.csv is never used in operational code or feature detection. It is evaluated here purely as an external benchmark.
+            </div>
+          </div>
+          <div class="section-actions">
+            <button class="btn btn-primary" onclick="loadEvaluation()">Run Evaluation</button>
+          </div>
+        </div>
+
+        <!-- Metrics Cards -->
+        <div class="eval-grid">
+          <div class="eval-card">
+            <div id="evalPrecision" class="eval-card-score">100%</div>
+            <div class="eval-card-label">Precision (TP / (TP + FP))</div>
+          </div>
+          <div class="eval-card">
+            <div id="evalRecall" class="eval-card-score">100%</div>
+            <div class="eval-card-label">Recall (TP / (TP + FN))</div>
+          </div>
+          <div class="eval-card">
+            <div id="evalF1" class="eval-card-score">1.0000</div>
+            <div class="eval-card-label">F1 Harmonic Score</div>
+          </div>
+          <div class="eval-card">
+            <div id="evalTotalGT" class="eval-card-score">15</div>
+            <div class="eval-card-label">Ground Truth Anomalies</div>
+          </div>
+        </div>
+
+        <!-- Confusion Matrix Box -->
+        <div class="confusion-box">
+          <div class="cm-cell" style="border-left: 4px solid var(--accent-green);">
+            <div class="cm-label">True Positives (Correctly Flagged)</div>
+            <div id="cmTP" class="cm-val" style="color: var(--accent-green);">15</div>
+          </div>
+          <div class="cm-cell" style="border-left: 4px solid var(--accent-amber);">
+            <div class="cm-label">False Positives (Spurious Alarms)</div>
+            <div id="cmFP" class="cm-val" style="color: var(--accent-amber);">0</div>
+          </div>
+          <div class="cm-cell" style="border-left: 4px solid var(--accent-red);">
+            <div class="cm-label">False Negatives (Missed Violations)</div>
+            <div id="cmFN" class="cm-val" style="color: var(--accent-red);">0</div>
+          </div>
+          <div class="cm-cell" style="border-left: 4px solid var(--accent-blue);">
+            <div class="cm-label">Audited Baseline Records</div>
+            <div id="cmTotalAudited" class="cm-val" style="color: var(--accent-blue);">Clean</div>
+          </div>
+        </div>
+
+        <!-- Breakdown by Issue Type Table -->
+        <h4 style="margin-bottom: 0.75rem;">Performance Breakdown by Anomaly Category</h4>
+        <div class="table-container" style="margin-bottom: 1.5rem;">
+          <table>
+            <thead>
+              <tr>
+                <th>Issue Type</th>
+                <th>True Positives</th>
+                <th>False Positives</th>
+                <th>False Negatives</th>
+                <th>Precision</th>
+                <th>Recall</th>
+                <th>F1 Score</th>
+              </tr>
+            </thead>
+            <tbody id="evalBreakdownTable"></tbody>
+          </table>
+        </div>
+
+        <!-- Side-by-side verification table -->
+        <h4 style="margin-bottom: 0.75rem;">Side-by-Side Exception Verification vs Ground Truth</h4>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Classification</th>
+                <th>Issue Type</th>
+                <th>Target Record</th>
+                <th>Seller ID</th>
+                <th>Financial Impact</th>
+                <th>Audit Decision Evidence</th>
+                <th>Ground Truth Specification</th>
+              </tr>
+            </thead>
+            <tbody id="evalComparisonTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. AUDIT TRAIL & TRACEABILITY TAB -->
+    <div id="tab-events" class="tab-pane">
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-title">Immutable Event History & Audit Log</div>
+          <div class="section-actions">
+            <select id="eventTypeFilter" class="filter-select" onchange="loadEvents()">
+              <option value="">All Entity Types</option>
+              <option value="SELLER">Seller</option>
+              <option value="FULFILLMENT">Fulfillment</option>
+              <option value="PAYOUT">Payout</option>
+              <option value="DISPUTE">Dispute</option>
+            </select>
+            <input type="text" id="eventEntityIdInput" class="input-search" placeholder="Filter by Entity ID..." onkeyup="loadEvents()">
+            <button class="btn btn-primary" onclick="loadEvents()">Filter</button>
+          </div>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Event ID</th>
+                <th>Entity Type</th>
+                <th>Entity ID</th>
+                <th>Event Type</th>
+                <th>Old State</th>
+                <th>New State</th>
+                <th>Actor</th>
+                <th>Timestamp</th>
+                <th>Payload</th>
+              </tr>
+            </thead>
+            <tbody id="eventsTable"></tbody>
+          </table>
+        </div>
+        <div id="eventPagination"></div>
+      </div>
+    </div>
+
+    <!-- 9. EXPORT CENTER TAB -->
+    <div id="tab-exports" class="tab-pane">
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-title">Data Exports & Storage Manifest</div>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">
+          Export operational tables to CSV, JSON, or SQL dump format inside <code>exports/</code>.
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+          <div style="background: var(--bg-card); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <h4 style="color: var(--accent-green); margin-bottom: 0.5rem;">CSV Table Exports</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Export all 12 core tables as individual comma-separated files.</p>
+            <button class="btn btn-success" onclick="triggerExport('csv')">Generate CSV Exports</button>
+          </div>
+
+          <div style="background: var(--bg-card); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <h4 style="color: var(--accent-blue); margin-bottom: 0.5rem;">JSON Structured Dump</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Export tables into JSON objects for API pipelines and analytics.</p>
+            <button class="btn btn-primary" onclick="triggerExport('json')">Generate JSON Exports</button>
+          </div>
+
+          <div style="background: var(--bg-card); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <h4 style="color: var(--accent-purple); margin-bottom: 0.5rem;">SQL Schema & Dump</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">Export full SQLite schema DDL and INSERT statements to <code>sellerops_dump.sql</code>.</p>
+            <button class="btn btn-primary" style="background: var(--accent-purple); border-color: var(--accent-purple);" onclick="triggerExport('sql')">Generate SQL Dump</button>
+          </div>
+        </div>
+
+        <div id="exportStatusBox" style="background: var(--bg-card); padding: 1rem; border-radius: var(--radius-md); display: none;">
+          <h4 style="font-size: 0.95rem; margin-bottom: 0.5rem;">Export Output Log:</h4>
+          <pre id="exportOutputContent" style="font-size: 0.8rem; color: var(--accent-green); overflow-x: auto;"></pre>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Payout Breakdown Modal -->
+  <div id="payoutModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="payoutModalTitle">Payout Reconciliation Breakdown</h3>
+        <button class="btn btn-sm" onclick="closeModal('payoutModal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div id="payoutModalSummary" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; background: var(--bg-card); padding: 1rem; border-radius: var(--radius-md); margin-bottom: 1rem;"></div>
+        <h4 style="margin-bottom: 0.5rem;">Constituent Payout Lines</h4>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Line ID</th>
+                <th>Order Line ID</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody id="payoutModalLines"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger" onclick="payoutAction('HOLD')">Hold Payout</button>
+        <button class="btn btn-success" onclick="payoutAction('APPROVE')">Approve Release</button>
+        <button class="btn" onclick="closeModal('payoutModal')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seller Detail Modal -->
+  <div id="sellerModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="sellerModalTitle">Seller Profile & Scorecard</h3>
+        <button class="btn btn-sm" onclick="closeModal('sellerModal')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div id="sellerModalInfo" style="margin-bottom: 1rem;"></div>
+        <h4 style="margin-bottom: 0.5rem;">Active Product Listings</h4>
+        <div class="table-container" style="max-height: 200px; margin-bottom: 1rem;">
+          <table>
+            <thead>
+              <tr>
+                <th>Listing ID</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Inventory</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="sellerModalListings"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" onclick="closeModal('sellerModal')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

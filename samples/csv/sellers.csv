@@ -1,0 +1,17 @@
+seller_id,name,email,tier,status,onboarding_date,reserve_rate,hold_period_days
+SELL-000003,Apex Trading 3,ops@apextrading3.example.com,TIER_1,ACTIVE,2024-03-05,0.06,7
+SELL-000007,Prime Goods 7,ops@primegoods7.example.com,TIER_2,PROBATION,2024-05-05,0.09,14
+SELL-000008,Summit Ventures 8,ops@summitventures8.example.com,ENTERPRISE,ACTIVE,2025-06-04,0.04,7
+SELL-000011,Quantum Trading 11,ops@quantumtrading11.example.com,TIER_3,ACTIVE,2024-11-18,0.12,21
+SELL-000013,Atlas Trading 13,ops@atlastrading13.example.com,TIER_2,ACTIVE,2024-03-02,0.09,14
+SELL-000021,Zenith Enterprises 21,ops@zenithenterprises21.example.com,TIER_2,ACTIVE,2025-01-13,0.09,14
+SELL-000022,Falcon Ventures 22,ops@falconventures22.example.com,TIER_3,ACTIVE,2024-06-10,0.12,21
+SELL-000023,Zenith Retail 23,ops@zenithretail23.example.com,TIER_2,ACTIVE,2025-01-13,0.09,14
+SELL-000027,Apex Tech 27,ops@apextech27.example.com,TIER_2,ACTIVE,2024-05-30,0.09,14
+SELL-000028,Quantum Trading 28,ops@quantumtrading28.example.com,TIER_3,ACTIVE,2024-07-21,0.12,21
+SELL-000029,Atlas Ventures 29,ops@atlasventures29.example.com,TIER_1,ACTIVE,2024-05-01,0.06,7
+SELL-000037,Echo Stores 37,ops@echostores37.example.com,ENTERPRISE,ACTIVE,2025-10-12,0.04,7
+SELL-000039,Vanguard Goods 39,ops@vanguardgoods39.example.com,TIER_2,ACTIVE,2024-11-23,0.09,14
+SELL-000041,Quantum Trading 41,ops@quantumtrading41.example.com,TIER_2,ACTIVE,2025-09-22,0.09,14
+SELL-000043,Prime Supply 43,ops@primesupply43.example.com,TIER_1,ACTIVE,2024-08-17,0.06,7
+SELL-000045,Prime Stores 45,ops@primestores45.example.com,TIER_1,ACTIVE,2024-06-19,0.06,7

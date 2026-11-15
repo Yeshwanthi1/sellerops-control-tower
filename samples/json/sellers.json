@@ -1,0 +1,162 @@
+[
+  {
+    "seller_id": "SELL-000003",
+    "name": "Apex Trading 3",
+    "email": "ops@apextrading3.example.com",
+    "tier": "TIER_1",
+    "status": "ACTIVE",
+    "onboarding_date": "2024-03-05",
+    "reserve_rate": 0.06,
+    "hold_period_days": 7
+  },
+  {
+    "seller_id": "SELL-000007",
+    "name": "Prime Goods 7",
+    "email": "ops@primegoods7.example.com",
+    "tier": "TIER_2",
+    "status": "PROBATION",
+    "onboarding_date": "2024-05-05",
+    "reserve_rate": 0.09,
+    "hold_period_days": 14
+  },
+  {
+    "seller_id": "SELL-000008",
+    "name": "Summit Ventures 8",
+    "email": "ops@summitventures8.example.com",
+    "tier": "ENTERPRISE",
+    "status": "ACTIVE",
+    "onboarding_date": "2025-06-04",
+    "reserve_rate": 0.04,
+    "hold_period_days": 7
+  },
+  {
+    "seller_id": "SELL-000011",
+    "name": "Quantum Trading 11",
+    "email": "ops@quantumtrading11.example.com",
+    "tier": "TIER_3",
+    "status": "ACTIVE",
+    "onboarding_date": "2024-11-18",
+    "reserve_rate": 0.12,
+    "hold_period_days": 21
+  },
+  {
+    "seller_id": "SELL-000013",
+    "name": "Atlas Trading 13",
+    "email": "ops@atlastrading13.example.com",
+    "tier": "TIER_2",
+    "status": "ACTIVE",
+    "onboarding_date": "2024-03-02",
+    "reserve_rate": 0.09,
+    "hold_period_days": 14
+  },
+  {
+    "seller_id": "SELL-000021",
+    "name": "Zenith Enterprises 21",
+    "email": "ops@zenithenterprises21.example.com",
+    "tier": "TIER_2",
+    "status": "ACTIVE",
+    "onboarding_date": "2025-01-13",
+    "reserve_rate": 0.09,
+    "hold_period_days": 14
+  },
+  {
+    "seller_id": "SELL-000022",
+    "name": "Falcon Ventures 22",
+    "email": "ops@falconventures22.example.com",
+    "tier": "TIER_3",
+    "status": "ACTIVE",
+    "onboarding_date": "2024-06-10",
+    "reserve_rate": 0.12,
+    "hold_period_days": 21
+  },
+  {
+    "seller_id": "SELL-000023",
+    "name": "Zenith Retail 23",
+    "email": "ops@zenithretail23.example.com",
+    "tier": "TIER_2",
+    "status": "ACTIVE",
+    "onboarding_date": "2025-01-13",
+    "reserve_rate": 0.09,
+    "hold_period_days": 14
+  },
+  {
+    "seller_id": "SELL-000027",
+    "name": "Apex Tech 27",
+    "email": "ops@apextech27.example.com",
+    "tier": "TIER_2",
+    "status": "ACTIVE",
+    "onboarding_date": "2024-05-30",
+    "reserve_rate": 0.09,
+    "hold_period_days": 14
+  },
+  {
+    "seller_id": "SELL-000028",
+    "name": "Quantum Trading 28",
+    "email": "ops@quantumtrading28.example.com",
+    "tier": "TIER_3",
+    "status": "ACTIVE",
+    "onboarding_date": "2024-07-21",
+    "reserve_rate": 0.12,
+    "hold_period_days": 21
+  },
+  {
+    "seller_id": "SELL-000029",
+    "name": "Atlas Ventures 29",
+    "email": "ops@atlasventures29.example.com",
+    "tier": "TIER_1",
+    "status": "ACTIVE",
+    "onboarding_date": "2024-05-01",
+    "reserve_rate": 0.06,
+    "hold_period_days": 7
+  },
+  {
+    "seller_id": "SELL-000037",
+    "name": "Echo Stores 37",
+    "email": "ops@echostores37.example.com",
+    "tier": "ENTERPRISE",
+    "status": "ACTIVE",
+    "onboarding_date": "2025-10-12",
+    "reserve_rate": 0.04,
+    "hold_period_days": 7
+  },
+  {
+    "seller_id": "SELL-000039",
+    "name": "Vanguard Goods 39",
+    "email": "ops@vanguardgoods39.example.com",
+    "tier": "TIER_2",
+    "status": "ACTIVE",
+    "onboarding_date": "2024-11-23",
+    "reserve_rate": 0.09,
+    "hold_period_days": 14
+  },
+  {
+    "seller_id": "SELL-000041",
+    "name": "Quantum Trading 41",
+    "email": "ops@quantumtrading41.example.com",
+    "tier": "TIER_2",
+    "status": "ACTIVE",
+    "onboarding_date": "2025-09-22",
+    "reserve_rate": 0.09,
+    "hold_period_days": 14
+  },
+  {
+    "seller_id": "SELL-000043",
+    "name": "Prime Supply 43",
+    "email": "ops@primesupply43.example.com",
+    "tier": "TIER_1",
+    "status": "ACTIVE",
+    "onboarding_date": "2024-08-17",
+    "reserve_rate": 0.06,
+    "hold_period_days": 7
+  },
+  {
+    "seller_id": "SELL-000045",
+    "name": "Prime Stores 45",
+    "email": "ops@primestores45.example.com",
+    "tier": "TIER_1",
+    "status": "ACTIVE",
+    "onboarding_date": "2024-06-19",
+    "reserve_rate": 0.06,
+    "hold_period_days": 7
+  }
+]

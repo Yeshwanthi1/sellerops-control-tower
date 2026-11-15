@@ -1,0 +1,112 @@
+[
+  {
+    "review_id": "REV-2026-000001",
+    "order_id": "ORD-2026-000004",
+    "order_line_id": "LINE-2026-000004-01",
+    "seller_id": "SELL-000028",
+    "listing_id": "LIST-SELL-000028-000001",
+    "rating": 4,
+    "title": "Excellent product!",
+    "comment": "Arrived faster than expected and works flawlessly. Highly recommend this seller.",
+    "created_at": "2026-08-21 16:13:38"
+  },
+  {
+    "review_id": "REV-2026-000002",
+    "order_id": "ORD-2026-000004",
+    "order_line_id": "LINE-2026-000004-02",
+    "seller_id": "SELL-000011",
+    "listing_id": "LIST-SELL-000011-000001",
+    "rating": 5,
+    "title": "Very satisfied",
+    "comment": "Packed securely and delivered on time. Will buy again.",
+    "created_at": "2026-08-22 03:13:38"
+  },
+  {
+    "review_id": "REV-2026-000003",
+    "order_id": "ORD-2026-000004",
+    "order_line_id": "LINE-2026-000004-03",
+    "seller_id": "SELL-000013",
+    "listing_id": "LIST-SELL-000013-000005",
+    "rating": 5,
+    "title": "Very satisfied",
+    "comment": "Packed securely and delivered on time. Will buy again.",
+    "created_at": "2026-08-22 07:13:38"
+  },
+  {
+    "review_id": "REV-2026-000004",
+    "order_id": "ORD-2026-000006",
+    "order_line_id": "LINE-2026-000006-01",
+    "seller_id": "SELL-000029",
+    "listing_id": "LIST-SELL-000029-000003",
+    "rating": 4,
+    "title": "Excellent product!",
+    "comment": "Arrived faster than expected and works flawlessly. Highly recommend this seller.",
+    "created_at": "2026-10-17 21:37:16"
+  },
+  {
+    "review_id": "REV-2026-000005",
+    "order_id": "ORD-2026-000010",
+    "order_line_id": "LINE-2026-000010-02",
+    "seller_id": "SELL-000027",
+    "listing_id": "LIST-SELL-000027-000007",
+    "rating": 4,
+    "title": "Excellent product!",
+    "comment": "Arrived faster than expected and works flawlessly. Highly recommend this seller.",
+    "created_at": "2026-08-23 23:27:01"
+  },
+  {
+    "review_id": "REV-2026-000006",
+    "order_id": "ORD-2026-000015",
+    "order_line_id": "LINE-2026-000015-01",
+    "seller_id": "SELL-000028",
+    "listing_id": "LIST-SELL-000028-000004",
+    "rating": 2,
+    "title": "Late delivery and damaged box",
+    "comment": "Took twice as long to arrive as promised and box was crushed.",
+    "created_at": "2026-08-29 06:27:50"
+  },
+  {
+    "review_id": "REV-2026-000007",
+    "order_id": "ORD-2026-000029",
+    "order_line_id": "LINE-2026-000029-01",
+    "seller_id": "SELL-000041",
+    "listing_id": "LIST-SELL-000041-000005",
+    "rating": 1,
+    "title": "Disappointed",
+    "comment": "Expected better quality for this price.",
+    "created_at": "2026-09-15 14:26:44"
+  },
+  {
+    "review_id": "REV-2026-000008",
+    "order_id": "ORD-2026-000029",
+    "order_line_id": "LINE-2026-000029-02",
+    "seller_id": "SELL-000007",
+    "listing_id": "LIST-SELL-000007-000005",
+    "rating": 5,
+    "title": "Very satisfied",
+    "comment": "Packed securely and delivered on time. Will buy again.",
+    "created_at": "2026-09-18 08:26:44"
+  },
+  {
+    "review_id": "REV-2026-000189",
+    "order_id": "ORD-2026-000537",
+    "order_line_id": "LINE-2026-000537-04",
+    "seller_id": "SELL-000023",
+    "listing_id": "LIST-SELL-000023-000002",
+    "rating": 2,
+    "title": "Late delivery and damaged box",
+    "comment": "Took twice as long to arrive as promised and box was crushed.",
+    "created_at": "2026-07-14 14:30:15"
+  },
+  {
+    "review_id": "REV-2026-000243",
+    "order_id": "ORD-2026-000704",
+    "order_line_id": "LINE-2026-000704-03",
+    "seller_id": "SELL-000023",
+    "listing_id": "LIST-SELL-000023-000003",
+    "rating": 4,
+    "title": "Great quality",
+    "comment": "Superb build quality, matches description exactly.",
+    "created_at": "2026-06-22 09:11:25"
+  }
+]

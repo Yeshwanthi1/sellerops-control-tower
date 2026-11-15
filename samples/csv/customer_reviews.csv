@@ -1,0 +1,11 @@
+review_id,order_id,order_line_id,seller_id,listing_id,rating,title,comment,created_at
+REV-2026-000001,ORD-2026-000004,LINE-2026-000004-01,SELL-000028,LIST-SELL-000028-000001,4,Excellent product!,Arrived faster than expected and works flawlessly. Highly recommend this seller.,2026-08-21 16:13:38
+REV-2026-000002,ORD-2026-000004,LINE-2026-000004-02,SELL-000011,LIST-SELL-000011-000001,5,Very satisfied,Packed securely and delivered on time. Will buy again.,2026-08-22 03:13:38
+REV-2026-000003,ORD-2026-000004,LINE-2026-000004-03,SELL-000013,LIST-SELL-000013-000005,5,Very satisfied,Packed securely and delivered on time. Will buy again.,2026-08-22 07:13:38
+REV-2026-000004,ORD-2026-000006,LINE-2026-000006-01,SELL-000029,LIST-SELL-000029-000003,4,Excellent product!,Arrived faster than expected and works flawlessly. Highly recommend this seller.,2026-10-17 21:37:16
+REV-2026-000005,ORD-2026-000010,LINE-2026-000010-02,SELL-000027,LIST-SELL-000027-000007,4,Excellent product!,Arrived faster than expected and works flawlessly. Highly recommend this seller.,2026-08-23 23:27:01
+REV-2026-000006,ORD-2026-000015,LINE-2026-000015-01,SELL-000028,LIST-SELL-000028-000004,2,Late delivery and damaged box,Took twice as long to arrive as promised and box was crushed.,2026-08-29 06:27:50
+REV-2026-000007,ORD-2026-000029,LINE-2026-000029-01,SELL-000041,LIST-SELL-000041-000005,1,Disappointed,Expected better quality for this price.,2026-09-15 14:26:44
+REV-2026-000008,ORD-2026-000029,LINE-2026-000029-02,SELL-000007,LIST-SELL-000007-000005,5,Very satisfied,Packed securely and delivered on time. Will buy again.,2026-09-18 08:26:44
+REV-2026-000189,ORD-2026-000537,LINE-2026-000537-04,SELL-000023,LIST-SELL-000023-000002,2,Late delivery and damaged box,Took twice as long to arrive as promised and box was crushed.,2026-07-14 14:30:15
+REV-2026-000243,ORD-2026-000704,LINE-2026-000704-03,SELL-000023,LIST-SELL-000023-000003,4,Great quality,"Superb build quality, matches description exactly.",2026-06-22 09:11:25
